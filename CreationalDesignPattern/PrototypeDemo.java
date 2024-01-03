@@ -1,5 +1,6 @@
 /*
 Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+Refs - https://www.codecademy.com/resources/docs/general/creational-design-patterns/prototype-pattern
 */
 
 import java.lang.*;
@@ -60,7 +61,7 @@ class EmployeePrototype implements Prototype {
     }
 }
 
-class PrototypeDemo {
+public class PrototypeDemo {
     public static void main(String[] args) {
         EmployeePrototype emp1 = new EmployeePrototype("1", "Ram", 24);
         EmployeePrototype emp2 = emp1.clone();
