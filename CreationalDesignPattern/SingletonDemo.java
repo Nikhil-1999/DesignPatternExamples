@@ -1,11 +1,16 @@
+/* 
+Singleton is a creational design pattern that lets you ensure that a class has only one instance, 
+while providing a global access point to this instance.
+*/
+
 class EmployeeSingleton {
     private static EmployeeSingleton emp = null;
-    private EmployeeSingleton () {};
+    private EmployeeSingleton() {};
 
     public static EmployeeSingleton getEmployeeInstance() {
-        if(emp == null) {
-            synchronized(EmployeeSingleton.class){
-                if(emp == null){
+        if (emp == null) {
+            synchronized(EmployeeSingleton.class) {
+                if (emp == null) {
                     emp = new EmployeeSingleton();
                 }
             }
@@ -14,12 +19,12 @@ class EmployeeSingleton {
     }
 }
 
-class Singleton {
+class SingletonDemo {
     public static void main(String[] args) {
         EmployeeSingleton emp1 = EmployeeSingleton.getEmployeeInstance();
         EmployeeSingleton emp2 = EmployeeSingleton.getEmployeeInstance();
 
-        if(emp1 == emp2) {
+        if (emp1 == emp2) {
             System.out.println("Exactly same instance");
         }
     }
