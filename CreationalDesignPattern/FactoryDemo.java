@@ -36,6 +36,7 @@ class FlightShipment extends Shipment {
     }
 }
 
+ // concrete product 
 class CruiseShipment extends Shipment {
     public CruiseShipment() {
         shippingPricePerKg = 1000;
@@ -53,6 +54,7 @@ class CruiseShipment extends Shipment {
     }
 }
 
+ // factory 
 class ShipmentFactory {
     public Shipment getShipment(String desiredShippingType) {
         if (desiredShippingType.equalsIgnoreCase("Flight")) {
@@ -66,7 +68,7 @@ class ShipmentFactory {
 }
 
 // client
-class FactoryDemo {
+public class FactoryDemo {
     public static void main(String[] args) {
         ShipmentFactory sf = new ShipmentFactory();
         System.out
