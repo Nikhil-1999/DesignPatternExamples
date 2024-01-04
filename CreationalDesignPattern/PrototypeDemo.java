@@ -71,9 +71,13 @@ public class PrototypeDemo {
     }
 }
 
-/* 
-Steps to create a prototype class ->
-1. Create a interface prototype which extends Cloneable marker interface and override the given clone method.
-2. This clone method does a shallow copy of objects and in case we need deep copy we can define our own method in prototype interface and that we can clone via new keyword.
-3. Shallow copy: Copies the immediate property values and Deep copy: Copies the immediate values, plus any recursive referenced object.
-*/
+/*
+ * Steps to create a prototype class ->
+ * 1. Create a interface prototype which extends Cloneable marker interface and
+ * override the given clone method.
+ * 2. This clone method does a shallow copy of objects and in case we need deep
+ * copy we can define our own method in prototype interface and that we can
+ * clone via new keyword.
+ * 3. Shallow copy: Copies the immediate property values and Deep copy: Copies
+ * the immediate values, plus any recursive referenced object.
+ */

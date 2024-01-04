@@ -177,16 +177,20 @@ class CustomerBuilder implements ICustomerBuilder {
 public class BuilderDemo {
     public static void main(String[] args) {
         Customer customer1 = CustomerBuilder.builder().firstName("Nikhil").lastName("Sharma").age(24).build();
-        Customer customer2 = CustomerBuilder.builder().firstName("Ram").age(42).email("abc@gmail.com").phoneNo("9712766712").build();
+        Customer customer2 = CustomerBuilder.builder().firstName("Ram").age(42).email("abc@gmail.com")
+                .phoneNo("9712766712").build();
         System.out.println(customer1);
         System.out.println(customer2);
     }
 }
 
-/* 
-Steps to create a builder class ->
-1. Create the product class with builder as input in constructor for which we want to create the object.
-2. Create builder interface and concrete builder class with builder and build method.
-3. All methods in builder class should return back the object.
-4. Create a client class to build the object step by step in the order required.
-*/
+/*
+ * Steps to create a builder class ->
+ * 1. Create the product class with builder as input in constructor for which we
+ * want to create the object.
+ * 2. Create builder interface and concrete builder class with builder and build
+ * method.
+ * 3. All methods in builder class should return back the object.
+ * 4. Create a client class to build the object step by step in the order
+ * required.
+ */
