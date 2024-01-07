@@ -36,7 +36,7 @@ class AdapterDemo {
 }
 
 /*
-Steps to create a singleton class -> 
+Steps to create a adapter class -> 
 1. It can be used where you have at least two classes with incompatible interfaces.
 2. Make an adapter class that follows the target interface.
 3. Extend adaptee class or make use of an instance and forward the service logic to adaptee class.
